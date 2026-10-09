@@ -24,7 +24,6 @@ localization relative to CDSs, structural features, and clustering patterns.
 | `results/` | Figures and tables presenting the main results |
 | `intermediates/` | All intermediate files generated and partially reused by the scripts |
 | `scripts/` | The three analysis scripts |
-| `code_output/` | Created at runtime; holds freshly generated outputs |
 
 ## Scripts
 
@@ -36,9 +35,11 @@ The project consists of three scripts:
    direction and distance in nt;
 3. **Script 3** clusters the PUs.
 
-> **Note:** The scripts are intended to be run in order 1 → 2 → 3, since each script depends 
-on outputs from the previous one(s). However, if `code_output/` is missing or lacks the required files, 
-the scripts will fall back to the pre-computed files in `intermediates/`.
+> **Runtime output:** When the scripts are run, they create a `code_output/`
+> directory for freshly generated files. This directory is not tracked by Git.
+> The scripts are intended to be run in order 1 → 2 → 3, since each script depends 
+> on outputs from the previous one(s). However, if `code_output/` is missing or lacks 
+> the required files, the scripts will fall back to the pre-computed files in `intermediates/`.
 
 ## Dependencies
 
