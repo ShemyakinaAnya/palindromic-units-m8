@@ -7,7 +7,7 @@ This repository contains the analysis scripts for the manuscript
 strain for industrial biotechnology"**.
 
 The scripts process palindromic units (PUs) identified in the *R. rhodochrous*
-M8 genome by **Repranger**, a putative palindromic element prediction tool [].
+M8 genome by **Repranger**, a putative palindromic element prediction tool.
 
 Such elements provide the basis for developing genus-specific tools for targeted
 regulation of gene expression in *R. rhodochrous* M8-based strains, thereby
